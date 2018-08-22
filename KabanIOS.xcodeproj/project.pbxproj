@@ -83,8 +83,8 @@
 		A4C3A611212DA5FC00619A9E /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				A4C3A5F8212DA34700619A9E /* AppDelegate.m */,
 				A4C3A5F7212DA34700619A9E /* AppDelegate.h */,
+				A4C3A5F8212DA34700619A9E /* AppDelegate.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
