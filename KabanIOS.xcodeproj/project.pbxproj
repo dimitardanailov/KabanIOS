@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7EA831B3033DEB4E30476626 /* libPods-KabanIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFADE40A6F762B9B31D7775 /* libPods-KabanIOS.a */; };
+		A411BCBA212DB86500A2BBDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A411BCB9212DB86500A2BBDA /* GoogleService-Info.plist */; };
 		A4C3A5F9212DA34700619A9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A5F8212DA34700619A9E /* AppDelegate.m */; };
 		A4C3A5FC212DA34700619A9E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A5FB212DA34700619A9E /* WelcomeViewController.m */; };
 		A4C3A5FF212DA34700619A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A5FD212DA34700619A9E /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		0475E7A1894948098EB8E2F2 /* Pods-KabanIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KabanIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-KabanIOS/Pods-KabanIOS.release.xcconfig"; sourceTree = "<group>"; };
 		52740846A9BBC5877E159C6F /* Pods-KabanIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KabanIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KabanIOS/Pods-KabanIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5EFADE40A6F762B9B31D7775 /* libPods-KabanIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KabanIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A411BCB9212DB86500A2BBDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4C3A5F4212DA34700619A9E /* KabanIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KabanIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C3A5F7212DA34700619A9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A4C3A5F8212DA34700619A9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				A4C3A603212DA34900619A9E /* Assets.xcassets */,
 				A4C3A605212DA34900619A9E /* LaunchScreen.storyboard */,
 				A4C3A608212DA34900619A9E /* Info.plist */,
+				A411BCB9212DB86500A2BBDA /* GoogleService-Info.plist */,
 				A4C3A609212DA34900619A9E /* main.m */,
 				A4C3A600212DA34700619A9E /* KabanIOS.xcdatamodeld */,
 			);
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4C3A607212DA34900619A9E /* LaunchScreen.storyboard in Resources */,
+				A411BCBA212DB86500A2BBDA /* GoogleService-Info.plist in Resources */,
 				A4C3A604212DA34900619A9E /* Assets.xcassets in Resources */,
 				A4C3A5FF212DA34700619A9E /* Main.storyboard in Resources */,
 			);
