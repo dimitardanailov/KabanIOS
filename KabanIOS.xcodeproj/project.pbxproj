@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4C3A5F9212DA34700619A9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A5F8212DA34700619A9E /* AppDelegate.m */; };
-		A4C3A5FC212DA34700619A9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A5FB212DA34700619A9E /* ViewController.m */; };
+		A4C3A5FC212DA34700619A9E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A5FB212DA34700619A9E /* WelcomeViewController.m */; };
 		A4C3A5FF212DA34700619A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A5FD212DA34700619A9E /* Main.storyboard */; };
 		A4C3A602212DA34700619A9E /* KabanIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A600212DA34700619A9E /* KabanIOS.xcdatamodeld */; };
 		A4C3A604212DA34900619A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A603212DA34900619A9E /* Assets.xcassets */; };
@@ -20,8 +20,8 @@
 		A4C3A5F4212DA34700619A9E /* KabanIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KabanIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C3A5F7212DA34700619A9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A4C3A5F8212DA34700619A9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A4C3A5FA212DA34700619A9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A4C3A5FB212DA34700619A9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A4C3A5FA212DA34700619A9E /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		A4C3A5FB212DA34700619A9E /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		A4C3A5FE212DA34700619A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4C3A601212DA34700619A9E /* KabanIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KabanIOS.xcdatamodel; sourceTree = "<group>"; };
 		A4C3A603212DA34900619A9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,11 +60,10 @@
 		A4C3A5F6212DA34700619A9E /* KabanIOS */ = {
 			isa = PBXGroup;
 			children = (
-				A4C3A5F7212DA34700619A9E /* AppDelegate.h */,
-				A4C3A5F8212DA34700619A9E /* AppDelegate.m */,
-				A4C3A5FA212DA34700619A9E /* ViewController.h */,
-				A4C3A5FB212DA34700619A9E /* ViewController.m */,
-				A4C3A5FD212DA34700619A9E /* Main.storyboard */,
+				A4C3A614212DA66800619A9E /* Vendor */,
+				A4C3A613212DA65800619A9E /* ViewControllers */,
+				A4C3A612212DA62A00619A9E /* Storyboards */,
+				A4C3A611212DA5FC00619A9E /* AppDelegate */,
 				A4C3A603212DA34900619A9E /* Assets.xcassets */,
 				A4C3A605212DA34900619A9E /* LaunchScreen.storyboard */,
 				A4C3A608212DA34900619A9E /* Info.plist */,
@@ -72,6 +71,47 @@
 				A4C3A600212DA34700619A9E /* KabanIOS.xcdatamodeld */,
 			);
 			path = KabanIOS;
+			sourceTree = "<group>";
+		};
+		A4C3A611212DA5FC00619A9E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A4C3A5F8212DA34700619A9E /* AppDelegate.m */,
+				A4C3A5F7212DA34700619A9E /* AppDelegate.h */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A4C3A612212DA62A00619A9E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A4C3A5FD212DA34700619A9E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A4C3A613212DA65800619A9E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4C3A615212DA72500619A9E /* WelcomeView */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A4C3A614212DA66800619A9E /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		A4C3A615212DA72500619A9E /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A4C3A5FA212DA34700619A9E /* WelcomeViewController.h */,
+				A4C3A5FB212DA34700619A9E /* WelcomeViewController.m */,
+			);
+			path = WelcomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C3A5FC212DA34700619A9E /* ViewController.m in Sources */,
+				A4C3A5FC212DA34700619A9E /* WelcomeViewController.m in Sources */,
 				A4C3A5F9212DA34700619A9E /* AppDelegate.m in Sources */,
 				A4C3A60A212DA34900619A9E /* main.m in Sources */,
 				A4C3A602212DA34700619A9E /* KabanIOS.xcdatamodeld in Sources */,
