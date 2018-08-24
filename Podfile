@@ -7,5 +7,6 @@ target 'KabanIOS' do
 
   # Pods for KabanIOS
   pod 'FBSDKLoginKit'
+  pod 'GoogleSignIn'
 
 end

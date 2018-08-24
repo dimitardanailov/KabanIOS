@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleSignIn/GoogleSignIn.h>
 
-@interface WelcomeViewController : UIViewController
+@interface WelcomeViewController : UIViewController<GIDSignInUIDelegate>
 
 
 @end

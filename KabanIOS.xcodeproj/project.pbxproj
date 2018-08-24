@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		7EA831B3033DEB4E30476626 /* libPods-KabanIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFADE40A6F762B9B31D7775 /* libPods-KabanIOS.a */; };
 		A411BCBA212DB86500A2BBDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A411BCB9212DB86500A2BBDA /* GoogleService-Info.plist */; };
+		A411BCC0212DD35100A2BBDA /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A411BCBF212DD35100A2BBDA /* BaseModel.m */; };
+		A411BCC3212DD42B00A2BBDA /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = A411BCC2212DD42B00A2BBDA /* Profile.m */; };
+		A411BCC8212DD75900A2BBDA /* ProfileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A411BCC7212DD75900A2BBDA /* ProfileManager.m */; };
 		A4C3A5F9212DA34700619A9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A5F8212DA34700619A9E /* AppDelegate.m */; };
 		A4C3A5FC212DA34700619A9E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A5FB212DA34700619A9E /* WelcomeViewController.m */; };
 		A4C3A5FF212DA34700619A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A5FD212DA34700619A9E /* Main.storyboard */; };
@@ -23,6 +26,12 @@
 		52740846A9BBC5877E159C6F /* Pods-KabanIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KabanIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KabanIOS/Pods-KabanIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5EFADE40A6F762B9B31D7775 /* libPods-KabanIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KabanIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A411BCB9212DB86500A2BBDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A411BCBE212DD34100A2BBDA /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		A411BCBF212DD35100A2BBDA /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		A411BCC2212DD42B00A2BBDA /* Profile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		A411BCC4212DD43C00A2BBDA /* Profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		A411BCC6212DD74A00A2BBDA /* ProfileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileManager.h; sourceTree = "<group>"; };
+		A411BCC7212DD75900A2BBDA /* ProfileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileManager.m; sourceTree = "<group>"; };
 		A4C3A5F4212DA34700619A9E /* KabanIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KabanIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C3A5F7212DA34700619A9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A4C3A5F8212DA34700619A9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +57,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A411BCBB212DD30400A2BBDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A411BCC5212DD73100A2BBDA /* ProfileManager */,
+				A411BCBD212DD32A00A2BBDA /* BaseModel */,
+				A411BCC1212DD3B000A2BBDA /* Profile */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A411BCBD212DD32A00A2BBDA /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				A411BCBE212DD34100A2BBDA /* BaseModel.h */,
+				A411BCBF212DD35100A2BBDA /* BaseModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		A411BCC1212DD3B000A2BBDA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A411BCC4212DD43C00A2BBDA /* Profile.h */,
+				A411BCC2212DD42B00A2BBDA /* Profile.m */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A411BCC5212DD73100A2BBDA /* ProfileManager */ = {
+			isa = PBXGroup;
+			children = (
+				A411BCC6212DD74A00A2BBDA /* ProfileManager.h */,
+				A411BCC7212DD75900A2BBDA /* ProfileManager.m */,
+			);
+			path = ProfileManager;
+			sourceTree = "<group>";
+		};
 		A4C3A5EB212DA34700619A9E = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +115,7 @@
 		A4C3A5F6212DA34700619A9E /* KabanIOS */ = {
 			isa = PBXGroup;
 			children = (
+				A411BCBB212DD30400A2BBDA /* Model */,
 				A4C3A614212DA66800619A9E /* Vendor */,
 				A4C3A613212DA65800619A9E /* ViewControllers */,
 				A4C3A612212DA62A00619A9E /* Storyboards */,
@@ -218,10 +265,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KabanIOS/Pods-KabanIOS-resources.sh",
 				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMOAuth2ViewTouch.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -256,6 +307,9 @@
 				A4C3A5FC212DA34700619A9E /* WelcomeViewController.m in Sources */,
 				A4C3A5F9212DA34700619A9E /* AppDelegate.m in Sources */,
 				A4C3A60A212DA34900619A9E /* main.m in Sources */,
+				A411BCC8212DD75900A2BBDA /* ProfileManager.m in Sources */,
+				A411BCC3212DD42B00A2BBDA /* Profile.m in Sources */,
+				A411BCC0212DD35100A2BBDA /* BaseModel.m in Sources */,
 				A4C3A602212DA34700619A9E /* KabanIOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

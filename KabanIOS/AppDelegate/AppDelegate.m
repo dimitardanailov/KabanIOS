@@ -6,6 +6,8 @@
 //  Copyright © 2018 Dimitar Danailov. All rights reserved.
 //
 
+@import GoogleSignIn;
+
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 #import "AppDelegate.h"
@@ -18,8 +20,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // Facebook Configurations
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
+    
+    // Google Configurations
+    [GIDSignIn sharedInstance].clientID = @"1040357313847-umdmeat8mfs1pre6ib2j0v298cdecl5s.apps.googleusercontent.com";
+    [GIDSignIn sharedInstance].delegate = self;
     
     return YES;
 }
@@ -28,14 +36,16 @@
             openURL:(NSURL *)url
             options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     
-    BOOL handled = [[FBSDKApplicationDelegate sharedInstance]
-        application:application
-        openURL:url
-        sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
-        annotation:options[UIApplicationOpenURLOptionsAnnotationKey]
-    ];
-    // Add any custom logic here.
-    return handled;
+    // Facebook
+    BOOL facebookHandled = [AppDelegate getFacebookHandled:application openURL:url options:options];
+    
+    // Google Plus
+    BOOL googlePlusHandled = [AppDelegate getGooglePlusHandled:application openURL:url options:options];
+    
+    NSLog(@"Facebook handled: %d", facebookHandled);
+    NSLog(@"Google plus handled: %d", googlePlusHandled);
+    
+    return facebookHandled || googlePlusHandled;
 }
     
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -109,5 +119,44 @@
         abort();
     }
 }
+    
+# pragma mark - Facebook
+    
++ (BOOL)getFacebookHandled:(UIApplication *)application
+    openURL:(NSURL *)url
+    options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    
+    return [[FBSDKApplicationDelegate sharedInstance]
+        application:application
+        openURL:url
+        sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+        annotation:options[UIApplicationOpenURLOptionsAnnotationKey]
+    ];
+}
+    
+# pragma mark - Google Plus
+    
++ (BOOL)getGooglePlusHandled:(UIApplication *)application
+                    openURL:(NSURL *)url
+                    options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
 
+    return [[GIDSignIn sharedInstance]
+        handleURL:url
+        sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+        annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
+}
+    
+- (void)signIn:(GIDSignIn *)signIn
+didSignInForUser:(GIDGoogleUser *)user
+     withError:(NSError *)error {
+    
+    NSLog(@"GooglePlus %@", user.profile.email);
+}
+    
+- (void)signIn:(GIDSignIn *)signIn
+didDisconnectWithUser:(GIDGoogleUser *)user
+     withError:(NSError *)error {
+    NSLog(@"GooglePlus - Perform any operations when the user disconnects from app here.");
+}
+    
 @end
