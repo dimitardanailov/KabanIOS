@@ -6,10 +6,10 @@
 //  Copyright © 2018 Dimitar Danailov. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <GoogleSignIn/GoogleSignIn.h>
+#import "ParentViewController.h"
 
-@interface WelcomeViewController : UIViewController<GIDSignInUIDelegate>
+@interface WelcomeViewController : ParentViewController<GIDSignInUIDelegate>
 
 
 @end

@@ -14,4 +14,18 @@
 
 @implementation Profile
 
+- (nullable instancetype)init {
+    self = [super init];
+    
+    return self;
+}
+
+- (void)updateThroughFacebookAttributes:(NSDictionary *)fbAttributes {
+    _email = fbAttributes[@"email"];
+}
+
++ (NSDictionary *)facebookParams {
+    return @{@"fields": @"email,name"};
+}
+
 @end

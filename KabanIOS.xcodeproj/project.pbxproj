@@ -12,6 +12,10 @@
 		A411BCC0212DD35100A2BBDA /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A411BCBF212DD35100A2BBDA /* BaseModel.m */; };
 		A411BCC3212DD42B00A2BBDA /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = A411BCC2212DD42B00A2BBDA /* Profile.m */; };
 		A411BCC8212DD75900A2BBDA /* ProfileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A411BCC7212DD75900A2BBDA /* ProfileManager.m */; };
+		A49C42B5213A36540022A2E7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49C42B4213A36540022A2E7 /* HomeViewController.m */; };
+		A49C42B9213A3A9B0022A2E7 /* FacebookLoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A49C42B8213A3A9B0022A2E7 /* FacebookLoginHelper.m */; };
+		A49C42BE213A82680022A2E7 /* UIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A49C42BD213A82680022A2E7 /* UIViewController+Additions.m */; };
+		A49C42C1213A8F7F0022A2E7 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49C42C0213A8F7F0022A2E7 /* ParentViewController.m */; };
 		A4C3A5F9212DA34700619A9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A5F8212DA34700619A9E /* AppDelegate.m */; };
 		A4C3A5FC212DA34700619A9E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A5FB212DA34700619A9E /* WelcomeViewController.m */; };
 		A4C3A5FF212DA34700619A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A5FD212DA34700619A9E /* Main.storyboard */; };
@@ -32,6 +36,14 @@
 		A411BCC4212DD43C00A2BBDA /* Profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
 		A411BCC6212DD74A00A2BBDA /* ProfileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileManager.h; sourceTree = "<group>"; };
 		A411BCC7212DD75900A2BBDA /* ProfileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileManager.m; sourceTree = "<group>"; };
+		A49C42B3213A36540022A2E7 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A49C42B4213A36540022A2E7 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A49C42B7213A3A860022A2E7 /* FacebookLoginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacebookLoginHelper.h; sourceTree = "<group>"; };
+		A49C42B8213A3A9B0022A2E7 /* FacebookLoginHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookLoginHelper.m; sourceTree = "<group>"; };
+		A49C42BC213A825B0022A2E7 /* UIViewController+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Additions.h"; sourceTree = "<group>"; };
+		A49C42BD213A82680022A2E7 /* UIViewController+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Additions.m"; sourceTree = "<group>"; };
+		A49C42C0213A8F7F0022A2E7 /* ParentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		A49C42C2213A8F880022A2E7 /* ParentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
 		A4C3A5F4212DA34700619A9E /* KabanIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KabanIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C3A5F7212DA34700619A9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A4C3A5F8212DA34700619A9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -94,6 +106,50 @@
 			path = ProfileManager;
 			sourceTree = "<group>";
 		};
+		A49C42B2213A36310022A2E7 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A49C42B3213A36540022A2E7 /* HomeViewController.h */,
+				A49C42B4213A36540022A2E7 /* HomeViewController.m */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		A49C42B6213A3A6C0022A2E7 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				A49C42B7213A3A860022A2E7 /* FacebookLoginHelper.h */,
+				A49C42B8213A3A9B0022A2E7 /* FacebookLoginHelper.m */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
+		A49C42BA213A82010022A2E7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A49C42BB213A82370022A2E7 /* UIViewController+Additions */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A49C42BB213A82370022A2E7 /* UIViewController+Additions */ = {
+			isa = PBXGroup;
+			children = (
+				A49C42BC213A825B0022A2E7 /* UIViewController+Additions.h */,
+				A49C42BD213A82680022A2E7 /* UIViewController+Additions.m */,
+			);
+			path = "UIViewController+Additions";
+			sourceTree = "<group>";
+		};
+		A49C42BF213A8F6A0022A2E7 /* ParentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A49C42C2213A8F880022A2E7 /* ParentViewController.h */,
+				A49C42C0213A8F7F0022A2E7 /* ParentViewController.m */,
+			);
+			path = ParentViewController;
+			sourceTree = "<group>";
+		};
 		A4C3A5EB212DA34700619A9E = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +171,7 @@
 		A4C3A5F6212DA34700619A9E /* KabanIOS */ = {
 			isa = PBXGroup;
 			children = (
+				A49C42BA213A82010022A2E7 /* Categories */,
 				A411BCBB212DD30400A2BBDA /* Model */,
 				A4C3A614212DA66800619A9E /* Vendor */,
 				A4C3A613212DA65800619A9E /* ViewControllers */,
@@ -150,6 +207,8 @@
 		A4C3A613212DA65800619A9E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A49C42BF213A8F6A0022A2E7 /* ParentViewController */,
+				A49C42B2213A36310022A2E7 /* HomeView */,
 				A4C3A615212DA72500619A9E /* WelcomeView */,
 			);
 			path = ViewControllers;
@@ -158,6 +217,7 @@
 		A4C3A614212DA66800619A9E /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				A49C42B6213A3A6C0022A2E7 /* Facebook */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -305,12 +365,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4C3A5FC212DA34700619A9E /* WelcomeViewController.m in Sources */,
+				A49C42B9213A3A9B0022A2E7 /* FacebookLoginHelper.m in Sources */,
 				A4C3A5F9212DA34700619A9E /* AppDelegate.m in Sources */,
 				A4C3A60A212DA34900619A9E /* main.m in Sources */,
+				A49C42C1213A8F7F0022A2E7 /* ParentViewController.m in Sources */,
+				A49C42BE213A82680022A2E7 /* UIViewController+Additions.m in Sources */,
 				A411BCC8212DD75900A2BBDA /* ProfileManager.m in Sources */,
 				A411BCC3212DD42B00A2BBDA /* Profile.m in Sources */,
 				A411BCC0212DD35100A2BBDA /* BaseModel.m in Sources */,
 				A4C3A602212DA34700619A9E /* KabanIOS.xcdatamodeld in Sources */,
+				A49C42B5213A36540022A2E7 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

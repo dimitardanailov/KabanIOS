@@ -40,5 +40,9 @@
  * User's family email
  */
 @property (copy, readonly, nullable) NSString *email;
+
+- (void)updateThroughFacebookAttributes:(NSDictionary *)fbAttributes;
+
++ (NSDictionary *)facebookParams;
     
 @end
