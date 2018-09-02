@@ -1,16 +1,13 @@
 //
-//  ViewController.h
+//  WelcomeViewController.h
 //  KabanIOS
 //
-//  Created by Dimitar Danailov on 22.08.18.
+//  Created by Dimitar Danailov on 2.09.18.
 //  Copyright © 2018 Dimitar Danailov. All rights reserved.
 //
 
-#import <GoogleSignIn/GoogleSignIn.h>
 #import "ParentViewController.h"
 
-@interface WelcomeViewController : ParentViewController<GIDSignInUIDelegate>
-
+@interface WelcomeViewController : ParentViewController
 
 @end
-

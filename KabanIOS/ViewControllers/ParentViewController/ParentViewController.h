@@ -11,4 +11,6 @@
 
 @interface ParentViewController : UIViewController
 
+- (void)loadViewController:(NSString *)storyIdentifier animated:(BOOL)animated;
+
 @end

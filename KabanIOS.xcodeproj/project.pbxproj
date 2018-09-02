@@ -17,12 +17,13 @@
 		A49C42BE213A82680022A2E7 /* UIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A49C42BD213A82680022A2E7 /* UIViewController+Additions.m */; };
 		A49C42C1213A8F7F0022A2E7 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49C42C0213A8F7F0022A2E7 /* ParentViewController.m */; };
 		A4C3A5F9212DA34700619A9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A5F8212DA34700619A9E /* AppDelegate.m */; };
-		A4C3A5FC212DA34700619A9E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A5FB212DA34700619A9E /* WelcomeViewController.m */; };
+		A4C3A5FC212DA34700619A9E /* WelcomeLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A5FB212DA34700619A9E /* WelcomeLoginViewController.m */; };
 		A4C3A5FF212DA34700619A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A5FD212DA34700619A9E /* Main.storyboard */; };
 		A4C3A602212DA34700619A9E /* KabanIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A600212DA34700619A9E /* KabanIOS.xcdatamodeld */; };
 		A4C3A604212DA34900619A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A603212DA34900619A9E /* Assets.xcassets */; };
 		A4C3A607212DA34900619A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A605212DA34900619A9E /* LaunchScreen.storyboard */; };
 		A4C3A60A212DA34900619A9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A609212DA34900619A9E /* main.m */; };
+		A4E69373213C54FF00BA4511 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E69372213C54FF00BA4511 /* WelcomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,14 +48,16 @@
 		A4C3A5F4212DA34700619A9E /* KabanIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KabanIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C3A5F7212DA34700619A9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A4C3A5F8212DA34700619A9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A4C3A5FA212DA34700619A9E /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
-		A4C3A5FB212DA34700619A9E /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		A4C3A5FA212DA34700619A9E /* WelcomeLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeLoginViewController.h; sourceTree = "<group>"; };
+		A4C3A5FB212DA34700619A9E /* WelcomeLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeLoginViewController.m; sourceTree = "<group>"; };
 		A4C3A5FE212DA34700619A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4C3A601212DA34700619A9E /* KabanIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KabanIOS.xcdatamodel; sourceTree = "<group>"; };
 		A4C3A603212DA34900619A9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4C3A606212DA34900619A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4C3A608212DA34900619A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4C3A609212DA34900619A9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4E69371213C54FF00BA4511 /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		A4E69372213C54FF00BA4511 /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,8 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				A49C42BF213A8F6A0022A2E7 /* ParentViewController */,
+				A4E69370213C54D800BA4511 /* WelcomeView */,
 				A49C42B2213A36310022A2E7 /* HomeView */,
-				A4C3A615212DA72500619A9E /* WelcomeView */,
+				A4C3A615212DA72500619A9E /* WelcomeLoginView */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -222,11 +226,20 @@
 			path = Vendor;
 			sourceTree = "<group>";
 		};
-		A4C3A615212DA72500619A9E /* WelcomeView */ = {
+		A4C3A615212DA72500619A9E /* WelcomeLoginView */ = {
 			isa = PBXGroup;
 			children = (
-				A4C3A5FA212DA34700619A9E /* WelcomeViewController.h */,
-				A4C3A5FB212DA34700619A9E /* WelcomeViewController.m */,
+				A4C3A5FA212DA34700619A9E /* WelcomeLoginViewController.h */,
+				A4C3A5FB212DA34700619A9E /* WelcomeLoginViewController.m */,
+			);
+			path = WelcomeLoginView;
+			sourceTree = "<group>";
+		};
+		A4E69370213C54D800BA4511 /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A4E69371213C54FF00BA4511 /* WelcomeViewController.h */,
+				A4E69372213C54FF00BA4511 /* WelcomeViewController.m */,
 			);
 			path = WelcomeView;
 			sourceTree = "<group>";
@@ -364,11 +377,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C3A5FC212DA34700619A9E /* WelcomeViewController.m in Sources */,
+				A4C3A5FC212DA34700619A9E /* WelcomeLoginViewController.m in Sources */,
 				A49C42B9213A3A9B0022A2E7 /* FacebookLoginHelper.m in Sources */,
 				A4C3A5F9212DA34700619A9E /* AppDelegate.m in Sources */,
 				A4C3A60A212DA34900619A9E /* main.m in Sources */,
 				A49C42C1213A8F7F0022A2E7 /* ParentViewController.m in Sources */,
+				A4E69373213C54FF00BA4511 /* WelcomeViewController.m in Sources */,
 				A49C42BE213A82680022A2E7 /* UIViewController+Additions.m in Sources */,
 				A411BCC8212DD75900A2BBDA /* ProfileManager.m in Sources */,
 				A411BCC3212DD42B00A2BBDA /* Profile.m in Sources */,

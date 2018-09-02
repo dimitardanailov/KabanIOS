@@ -7,6 +7,7 @@
 //
 
 #import "ParentViewController.h"
+#import "HomeViewController.h"
 
 @interface ParentViewController ()
 
@@ -20,6 +21,12 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)loadViewController:(NSString *)storyIdentifier animated:(BOOL)animated {
+    ParentViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:storyIdentifier];
+    
+    [self.navigationController pushViewController:vc animated:animated];
 }
 
 
