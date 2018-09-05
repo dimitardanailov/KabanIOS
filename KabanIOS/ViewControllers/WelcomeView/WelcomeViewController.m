@@ -11,6 +11,7 @@
 #import "WelcomeViewController.h"
 #import "HomeViewController.h"
 #import "WelcomeLoginViewController.h"
+#import "RevealViewController.h"
 
 @interface WelcomeViewController ()
 
@@ -34,6 +35,8 @@
     self.navigationController.navigationBarHidden = YES;
 }
 
+#pragma mark - Navigation
+
 /**
  * @method loadDependsSocialProviderData
  * @abstract If user is logged through Facebook or Google Plus
@@ -42,16 +45,12 @@
  */
 - (void)loadDependsSocialProviderData {
     if ([FBSDKAccessToken currentAccessToken]) {
-        NSLog(@"HomeView");
-        [self loadViewController:HomeViewController.storyboardIdentifier animated:YES];
+        NSLog(@"RevealViewController");
+        [self loadViewController:RevealViewController.storyboardIdentifier animated:NO];
     } else {
         NSLog(@"WelcomeLoginView");
         [self loadViewController:WelcomeLoginViewController.storyboardIdentifier animated:YES];
     }
 }
-
-#pragma mark - Navigation
-
-
 
 @end
